@@ -42,14 +42,13 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_16.9.compilerID.FP_REASSOC.784847528" name="Allow reassociation of FP arithmetic (--fp_reassoc)" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.compilerID.FP_REASSOC" value="com.ti.ccstudio.buildDefinitions.C2000_16.9.compilerID.FP_REASSOC.on" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_16.9.compilerID.INCLUDE_PATH.1215054747" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/driverlib/source}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/driverlib/source/inc}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/VCU2/vcu2_include}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/common/include}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/common/source}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/driverlib/source}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/FPU/include}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/FPU/utility}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/headers/include}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/headers/source}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/VCU2/fft}"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 								</option>
@@ -84,11 +83,14 @@
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.SEARCH_PATH.1432170622" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.SEARCH_PATH" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}}"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.DIAG_WRAP.1277114401" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.DIAG_WRAP" value="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.DISPLAY_ERROR_NUMBER.420995013" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.XML_LINK_INFO.2068399116" name="Detailed link information data-base into &lt;file&gt; (--xml_link_info, -xml_link_info)" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.XML_LINK_INFO" value="&quot;${ProjName}_linkInfo.xml&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.PRIORITY.1720501340" name="Search libraries in priority order (--priority, -priority)" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.PRIORITY" value="false" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.REREAD_LIBS.968284627" name="Reread libraries; resolve backward references (--reread_libs, -x)" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.linkerID.REREAD_LIBS" value="true" valueType="boolean"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_16.9.exeLinker.inputType__CMD_SRCS.1624519825" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.exeLinker.inputType__CMD_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_16.9.exeLinker.inputType__CMD2_SRCS.1258056103" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.exeLinker.inputType__CMD2_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_16.9.exeLinker.inputType__GEN_CMDS.1118384001" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_16.9.exeLinker.inputType__GEN_CMDS"/>
@@ -97,7 +99,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="common/source/F2837xD_SWPrioritizedPieVect.c|driverlib/source/ccs" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="common/source/F2837xD_SWPrioritizedPieVect.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
